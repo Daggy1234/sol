@@ -23,7 +23,7 @@ def dependencies(l):
 
 def object_file(f):
     (root, ext) = os.path.splitext(f)
-    return os.path.join(objdir, root + '.o')
+    return os.path.join(objdir, f'{root}.o')
 
 def replace_extension(f, e):
     (root, ext) = os.path.splitext(f)
